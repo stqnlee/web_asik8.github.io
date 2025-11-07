@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Orderra — Catalog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Orderra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavCatalog">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavCatalog">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="catalog.html">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order Page</a></li>
+            <li class="nav-item"><a class="nav-link" href="tracking.html">Order Tracking</a></li>
+            <li class="nav-item"><a class="nav-link" href="support.html">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="mb-4">Product catalog</h1>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card product-card h-100">
+          <img src="14.jpg" class="card-img-top" alt="iPhone 14">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">iPhone 14</h5>
+            <p class="card-text">Powerful performance, sleek design.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <strong>$990</strong>
+              <div>
+                <button class="btn btn-sm btn-primary add-to-cart" data-name="iPhone 14" data-price="1420">Add</button>
+                <a href="order.html?product=iPhone%2014" class="btn btn-sm btn-outline-primary">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card product-card h-100">
+          <img src="cof.png.webp" class="card-img-top" alt="Coffee maker">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Coffee maker</h5>
+            <p class="card-text">Brew perfect coffee every morning.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <strong>$320</strong>
+              <div>
+                <button class="btn btn-sm btn-primary add-to-cart" data-name="Coffee maker" data-price="120">Add</button>
+                <a href="order.html?product=Coffee%20maker" class="btn btn-sm btn-outline-primary">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card product-card h-100">
+          <img src="watch.jpg" class="card-img-top" alt="Apple Watch">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Apple Watch</h5>
+            <p class="card-text">Track health and stay connected.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <strong>$420</strong>
+              <div>
+                <button class="btn btn-sm btn-primary add-to-cart" data-name="Apple Watch" data-price="420">Add</button>
+                <a href="order.html?product=Apple%20Watch" class="btn btn-sm btn-outline-primary">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-auto">
+    <div class="container d-flex justify-content-between">
+      <small>© 2025 Order Processing System. All rights reserved.</small>
+      <div>Telephone: +7 700 601 50 40</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

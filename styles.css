@@ -1,0 +1,63 @@
+body{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+.site-header .navbar-brand{
+  font-weight:700;
+  color:#0d6efd;
+}
+.brand-title{ 
+    font-size:1.25rem;
+    font-weight:700;
+    color: #0d6efd;
+}
+.logo{ 
+    width:36px;
+    height:36px; 
+    object-fit:cover; 
+}
+
+.benefits{
+    list-style:none; 
+    padding-left:0; 
+    margin-top:1rem; 
+    color: #6c757d; 
+}
+.benefits li{ 
+    margin-bottom:.35rem; 
+}
+
+.product-card img{ 
+    width:200px; 
+    margin: 5%;
+    object-fit:cover; 
+}
+footer{ 
+    margin-top:auto; 
+}
+
+@media (
+    max-width:576px
+){
+  .brand-title{ 
+    font-size:1rem; 
+}
+  .product-card img{ 
+    height:160px; 
+}
+}
+
+a:focus, button:focus, input:focus, select:focus, textarea:focus { 
+    outline: 3px solid #0d6efd26; 
+    outline-offset:2px; 
+}
+
+.is-valid { 
+    border-color:#198754 !important; 
+    box-shadow:none !important; 
+}
+.is-invalid { 
+    border-color:#dc3545 !important; 
+    box-shadow:none !important; 
+}
